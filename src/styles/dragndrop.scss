@@ -1,0 +1,114 @@
+$color_1: #494949;
+$color_2: #416183;
+$font-family_1: sans-serif;
+
+.card {
+	width: 100%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 15px;
+	background: #fff;
+	box-shadow: 3px 1px 12px #0000001a;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	cursor: move;
+}
+.img {
+	img {
+		width: 40px;
+		height: 40px;
+	}
+}
+.status {
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+.days {
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+.time {
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+.card_right {
+	width: auto;
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.order {
+	.status {
+		background: #fff1de;
+		color: $color_1;
+		padding: 3px 10px;
+		border-radius: 18px;
+	}
+}
+.done {
+	.status {
+		background: #c8ebdd;
+		color: $color_1;
+		padding: 3px 10px;
+		border-radius: 18px;
+	}
+}
+.pending {
+	.status {
+		background: #cfd8f0;
+		color: $color_1;
+		padding: 3px 10px;
+		border-radius: 18px;
+	}
+}
+
+.App {
+	font-family: $font-family_1;
+	text-align: center;
+	background: #fbfcfd;
+	height: 100vh;
+	padding: 40px 0px;
+}
+h4 {
+	font-family: $font-family_1;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-top: 0px;
+	color: $color_2;
+}
+.containier {
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	justify-content: space-evenly;
+    gap:50px;
+}
+.drag_column {
+	width: 100%;
+	float: left;
+	display: flex;
+}
+.drag_row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.small-box {
+	width: 140px;
+	background: #f7f8fa;
+	height: max-content;
+}
+.task {
+	border: 1px solid white;
+	margin: 10px;
+	box-shadow: 1px 3px 10px gray;
+	height: 8vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
